@@ -246,8 +246,8 @@ body{background:var(--bg);color:var(--text);font-family:var(--ff-body);
     </div>
   </div>
   <div class="header-meta">
-    <div><div class="meta-label">Semana Ref.</div><div class="meta-value">20/09–26/09/2026</div></div>
-    <div><div class="meta-label">Emissão</div><div class="meta-value">01/10/2026</div></div>
+    <div><div class="meta-label">Semana Ref.</div><div class="meta-value">27/09–03/10/2026</div></div>
+    <div><div class="meta-label">Emissão</div><div class="meta-value">06/10/2026</div></div>
     <div class="badge"><span class="live"></span>ANP · ANTTLog · Petrobras</div>
     <button onclick="exportDieselRegioes()" style="display:flex;align-items:center;gap:6px;padding:5px 14px;background:rgba(0,212,170,.08);border:1px solid rgba(0,212,170,.35);color:var(--accent);font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.06em;text-transform:uppercase;cursor:pointer;border-radius:2px;white-space:nowrap;transition:background .15s;height:32px" onmouseover="this.style.background='rgba(0,212,170,.18)'" onmouseout="this.style.background='rgba(0,212,170,.08)'">⬇ Exportar Diesel CSV</button>
   </div>
@@ -289,8 +289,8 @@ body{background:var(--bg);color:var(--text);font-family:var(--ff-body);
 // ═══════════════════════════════════════════════════════════
 async function carregarIndicadoresLive(){
   const container = document.getElementById('liveIndicadores');
-  const DIESEL_ANP = 7.13;          // último ANP oficial
-  const DIESEL_ANP_DATA = '24/05–30/05';
+  const DIESEL_ANP = 7.35;          // último ANP oficial
+  const DIESEL_ANP_DATA = '27/09–03/10';
   const IPTL_VAL = 7.50; // média mensal abril Veloe/Fipe
   const IPC_MLOG_VAL = 7.10; // IPC.MLog fonte complementar 01/06
   const IPTL_DATA = 'média abril';
@@ -447,7 +447,7 @@ setInterval(carregarIndicadoresLive, 10 * 60 * 1000);
 <!-- DIESEL STRIP -->
 <div class="diesel-strip">
   <div class="dc"><div class="dc-label">⛽ Diesel B · Nacional</div><div class="dc-val">R$ 6,97 <small>/L</small></div><div class="dc-sub grn">▼ est. ANP 24–30/05 · -0,97% na semana</div></div>
-  <div class="dc"><div class="dc-label">⛽ Diesel S-10 · Nacional</div><div class="dc-val">R$ 7,13 <small>/L</small></div><div class="dc-sub grn">▼ -R$0,07 · ANP 24/05–30/05 · 5ª queda seguida</div></div>
+  <div class="dc"><div class="dc-label">⛽ Diesel S-10 · Nacional</div><div class="dc-val">R$ 7,35 <small>/L</small></div><div class="dc-sub grn">▼ -R$0,07 · ANP 24/05–30/05 · 5ª queda seguida</div></div>
   <div class="dc"><div class="dc-label">🏭 Petrobras → Distribuidoras</div><div class="dc-val">R$ 3,65 <small>/L</small></div><div class="dc-sub org">Mantém valor · privados -R$0,18/L · Brent sobe risco reajuste</div></div>
   <div class="dc"><div class="dc-label">🛡 Subvenção Gov. · R$1,52/L</div><div class="dc-val" style="color:#00d4aa">R$ 1,52 <small>/L</small></div><div class="dc-sub grn">Vigente até 31/05 · múltiplas distribuidoras</div></div>
   <div class="dc"><div class="dc-label">📈 Acumulado S-10 · 22/02→01/06</div><div class="dc-val" style="color:#ff4d6d">+R$ 1,49 <small>/L</small></div><div class="dc-sub red">▲ +26,4% no período · pico R$7,58 em 04/04</div></div>
